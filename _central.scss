@@ -1,0 +1,110 @@
+$color-verde:81b29a;
+$font-family:Verdana, Geneva, Tahoma, sans-serif;
+$color-azul:3d405b;
+
+@mixin personalizada ($colorfondo,$ancho)
+{
+ background-color: $colorfondo;
+ width: $ancho;
+}
+.tercer{
+ color:$color-verde;
+ padding-top: 70px;
+ padding-bottom: 50px;
+ text-align: center;
+ height: 50px;
+ @include personalizada(rgb(245, 244, 244),100% )
+}
+.cuarto {
+ padding-bottom: 30px;
+ padding-top: 40px;
+ text-align: center;
+  p{ color:$color-azul;
+     font-size: x-large;
+     width: 400px;
+     transform: translate(80px,150px);
+     font-family:$font-family;
+    }
+   img{
+     margin-right: 30px;
+     margin-top: 20px;
+     margin-left: 30px;
+     margin-bottom: 30px;
+     box-shadow: 0 0 30px;
+     width: 550px;
+     height: 450px;
+     opacity: 0.9;
+    }
+    button{
+     background-color:$color-verde;
+     border-radius: solid 5px;
+     color:$color-azul;
+     &:hover{
+        background-color:$color-azul;
+     }
+    }
+    h1{
+     color:e07a5f;
+     margin-top: 50px;
+     font-size: xx-large;
+     font-family:$font-family
+    }
+ @include personalizada(rgb(245, 244, 244),100% )
+}
+
+@media (max-width: 480px){ 
+ .cuarto{ 
+    img{ 
+     justify-content: center;
+     width: 250px;
+     height: 200px;
+     margin-bottom: 5px;
+    }
+    p{ 
+        display:none;
+    }
+    h1{
+        padding-bottom: 20px;
+    }
+  }
+}
+/*--------------------------------------------formulario------------------------------------------*/
+.contacto{
+    padding-top: 30px;
+    padding-bottom: 20px;
+   h1{
+     color:$color-verde;
+     padding-bottom: 40px;
+    }
+    button{
+     font-family:$font-family;
+     font-size: x-large;
+     margin-top: 30px;
+     margin-bottom: 50px;
+     width: 200px;
+     border-style: none;
+     background-color:$color-verde;
+     &:hover{
+        background-color:$color-azul;
+     }
+    }
+}
+iframe{
+ padding-bottom: 40px;
+}
+.contactos{
+ padding-bottom: 20px;
+ text-align: center;
+ font-size: x-large;
+ font-family:$font-family;
+}
+@media (max-width: 480px){
+    .contactos{
+        font-size: larger;
+        text-align: center;
+    }
+    iframe{
+        width: 80%;
+        padding-left: 10%;
+    }
+}

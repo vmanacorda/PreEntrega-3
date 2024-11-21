@@ -1,0 +1,157 @@
+.primer {
+  background-color: f1dac4;
+  height: 200px;
+  width: 100%;
+}
+
+.logo {
+  margin-top: 10px;
+  background-color: rgb(245, 236, 219);
+  height: 180px;
+  width: 180px;
+  clip-path: circle(50% at center);
+  opacity: 0.7;
+  animation-name: girarlogo;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
+}
+
+@keyframes girarlogo {
+  from {
+    transform: scale(1.5);
+  }
+}
+.segundo {
+  z-index: 1;
+  background-color: rgb(231, 227, 223);
+  position: sticky;
+  top: 0;
+  border-bottom: solid 1px rgb(24, 24, 49);
+  border-top: solid 1px rgb(24, 24, 49);
+  font-size: 18px;
+  width: 100%;
+}
+.segundo li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-right: 30px;
+}
+
+@media (max-width: 480px) {
+  .logo {
+    justify-content: center;
+  }
+}
+.tercer {
+  color: 81b29a;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  text-align: center;
+  height: 50px;
+  background-color: rgb(245, 244, 244);
+  width: 100%;
+}
+
+.cuarto {
+  padding-bottom: 30px;
+  padding-top: 40px;
+  text-align: center;
+  background-color: rgb(245, 244, 244);
+  width: 100%;
+}
+.cuarto p {
+  color: 3d405b;
+  font-size: x-large;
+  width: 400px;
+  transform: translate(80px, 150px);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cuarto img {
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 30px;
+  width: 550px;
+  height: 450px;
+  opacity: 0.9;
+}
+.cuarto button {
+  background-color: 81b29a;
+  border-radius: solid 5px;
+  color: 3d405b;
+}
+.cuarto button:hover {
+  background-color: 3d405b;
+}
+.cuarto h1 {
+  color: e07a5f;
+  margin-top: 50px;
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 480px) {
+  .cuarto img {
+    justify-content: center;
+    width: 250px;
+    height: 200px;
+    margin-bottom: 5px;
+  }
+  .cuarto p {
+    display: none;
+  }
+  .cuarto h1 {
+    padding-bottom: 20px;
+  }
+}
+/*--------------------------------------------formulario------------------------------------------*/
+.contacto {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.contacto h1 {
+  color: 81b29a;
+  padding-bottom: 40px;
+}
+.contacto button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 200px;
+  border-style: none;
+  background-color: 81b29a;
+}
+.contacto button:hover {
+  background-color: 3d405b;
+}
+
+iframe {
+  padding-bottom: 40px;
+}
+
+.contactos {
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 480px) {
+  .contactos {
+    font-size: larger;
+    text-align: center;
+  }
+  iframe {
+    width: 80%;
+    padding-left: 10%;
+  }
+}
+.secto {
+  padding-top: 30px;
+  background-color: 4a4e69;
+  width: 100%;
+}
+
+/*# sourceMappingURL=estilos.css.map */
